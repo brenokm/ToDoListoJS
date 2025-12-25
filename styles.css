@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body{
+    background: url(img/bela-paisagem-de-montanhas.jpg) no-repeat center / cover;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+}
+section{
+
+}
+
+.container{
+     background: rgba(0, 0, 0, 0.10);
+     backdrop-filter: blur(15px);
+     box-shadow: inset 0 0 20px white;
+  
+    width: fit-content;
+    padding: 60px 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
