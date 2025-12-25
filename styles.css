@@ -1,30 +1,151 @@
 * {
+    padding: 0;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  font-family: Verdana;
+  color: black;
 }
 
-html, body {
-  width: 100%;
-  height: 100%;
-}
+
 body{
-    background: url(img/bela-paisagem-de-montanhas.jpg) no-repeat center / cover;
-    display: flex;
-    height: fit-content;
-    justify-content: center;
+    background: url(img/bela-paisagem-de-montanhas.jpg) ;
+     background-position: center;
+  background-size: cover;
 }
-section{
+button{
+    background-color: #fdfdfd;
+    color: #102F5e;
+    border: 2px solid #102f5e;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+button:hover{
+    background-color: rgb(11, 0, 75);
+   
+}
+button:hover > i{
+    color: white;
+   
+}
 
+button i{
+    pointer-events: none;
+    color:#102F5e;
+    font-weight: bold;
 }
+input, select{
+    padding: 0.25rem 0.5rem;
+}
+.hide{
+    display: none;
+}
+
 
 .container{
      background: rgba(0, 0, 0, 0.10);
      backdrop-filter: blur(15px);
      box-shadow: inset 0 0 20px white;
   
-    width: fit-content;
-    padding: 60px 20px;
-    margin: 20px;
-    border-radius: 20px;
+    max-width: 450px;
+    margin: 3rem auto 0;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #CCC;
+}
+#toDoForm,#editForm{
+    padding: 1rem;
+    border-bottom: 1px solid #CCC;
+}
+
+#toDoForm p, #editForm{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.formControl{
+    display: flex;
+}
+.formControl input{
+    margin-right: 0.3rem;
+}
+
+#cancelEditBtn{
+margin-top: 1rem;  
+ 
+}
+#cancelEditBtn:hover{
+margin-top: 1rem;  
+color: rgb(255, 255, 255);  
+}
+#toolBar{
+    padding: 1rem;
+    border-bottom: 1px solid #CCC;
+    display: flex;
+}
+#toolBar h4{
+    margin-bottom: 0.5rem;
+}
+#search{
+    border-right: 1px solid #CCC;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+#search form {
+    display: flex;
+}
+#search input{
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+#filter select{
+    flex: 1;
+}
+
+.toDo {
+  background: rgba(255, 207, 51, 0.418);
+  backdrop-filter: blur(15px);
+  box-shadow: inset 0 0 20px rgb(205, 255, 67);
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.toDo h3{
+     flex: 1;
+  font-size: 0.9rem;
+}
+.toDo button {
+  margin-left: 0.4rem;
+}
+  .done {
+  background: #395169;
+}
+
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
 }
